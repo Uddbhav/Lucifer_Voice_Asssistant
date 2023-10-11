@@ -73,13 +73,6 @@ def send_whatsapp_message(num, msg):
     kit.sendwhatmsg_instantly(f"+91{num}", msg)
 
 
-def send_email(to, content):
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.starttls()
-    server.login("udd.mathur@gmail.com", "cqzntlhurbqnxsyt")
-    server.sendmail('udd.mathur@gmail.com', to, content)
-
-
 wishme()
 if __name__ == '__main__':
     while True:
